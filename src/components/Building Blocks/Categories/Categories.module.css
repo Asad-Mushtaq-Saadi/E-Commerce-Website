@@ -1,0 +1,30 @@
+.categoriesParent {
+    display: flex;
+    gap: 3rem;
+    font-size: 1.7rem;
+}
+
+.categoriesParent p {
+    transition: color 0.5s ease;
+}
+
+.categoriesParent p:hover {
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+.icon{
+    font-size: 2.2rem;
+    display: none;
+}
+
+
+@media (max-width: 860px) {
+.categoriesParent p{
+    display: none;
+}
+.icon{
+    display: block;
+}
+  
+}

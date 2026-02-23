@@ -1,0 +1,30 @@
+.contactBarParent{
+    background-color: var(--primary-color);
+}
+
+
+.contactBarContent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    gap: 1rem;
+}
+
+@media (max-width: 760px) {
+.contactBarContent{
+    display: flex;
+    flex-direction: column;
+    
+}
+  
+}
+
+@media (max-width: 560px) {
+.contactBarContent{
+    gap: 0;
+    
+}
+  
+}
+

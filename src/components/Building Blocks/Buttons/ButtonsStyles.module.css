@@ -1,0 +1,30 @@
+button{
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    border: none;
+    background-color: var(--primary-color);
+    color: white;
+    user-select: none;
+    transition: background-color .7s ease   ;
+}
+
+button:hover{
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.squareButtonParent button{
+    border-radius: 5px;
+    
+}
+
+.roundedButtonParent button{
+    padding: 1rem 4rem;
+    border-radius: 25px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15); /* soft shadow */
+}
+
+.roundedButtonParent button:hover{
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35); /* darker shadow */
+}

@@ -1,0 +1,19 @@
+.headerMainBarContent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+}
+.icon {
+
+    cursor: pointer;
+    transition: color 0.8s ease;
+}
+
+.icon:hover {
+    color: #007bff;
+}
+
+.logo{
+    color: #000000;
+}

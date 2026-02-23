@@ -1,0 +1,39 @@
+.promo_bar {
+  width: 100%;
+  background-color: var(--secondary-color);
+  color: var(--text-secondary);
+  height: 4rem;
+  align-content: center;
+  overflow: hidden;
+}
+
+.content {
+  display: flex;
+  gap: 10rem;
+  animation: moveLeft 8s linear infinite;
+  /* will-change: transform; */
+  user-select: none;
+}
+
+.promo_bar:hover .content {
+  animation-play-state: paused;
+}
+
+.text {
+  white-space: nowrap;
+  font-size: 1.4rem;
+}
+
+@keyframes moveLeft {
+  from {
+    transform: translateX(0%);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media screen and (max-width: 576px) {
+  
+}

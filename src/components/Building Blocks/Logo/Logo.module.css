@@ -1,0 +1,7 @@
+.logo h1{
+    color: var(--primary-color);
+    font-size: 4rem;
+    user-select: none;
+    cursor: pointer;
+    /* padding-right:30px; */
+}

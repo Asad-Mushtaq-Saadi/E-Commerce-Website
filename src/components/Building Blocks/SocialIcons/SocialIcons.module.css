@@ -1,0 +1,22 @@
+.socialIcon {
+    border-radius: 100%;
+    padding: 5px;
+    overflow: visible;
+    font-size: 1.5rem;
+    color: var(--text-secondary);
+    transition: background-color 0.3s ease, 
+                color 0.3s ease, 
+                transform 0.3s ease;
+}
+
+.socialIcon:hover {
+    background-color: var(--secondary-color);
+    color: white;                 
+    transform: scale(1.1);        
+}
+
+.socialIconsParent{
+    display: flex;
+    gap: 8px;
+}
+
