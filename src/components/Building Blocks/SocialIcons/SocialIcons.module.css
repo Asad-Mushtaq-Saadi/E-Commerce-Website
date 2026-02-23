@@ -10,8 +10,8 @@
 }
 
 .socialIcon:hover {
-    background-color: var(--secondary-color);
-    color: white;                 
+    background-color: var(--tertiary-color);
+    color: var(--secondary-color);                 
     transform: scale(1.1);        
 }
 
