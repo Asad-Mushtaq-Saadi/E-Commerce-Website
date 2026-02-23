@@ -1,0 +1,32 @@
+.rParent{
+    display: flex;
+    justify-content: space-between;
+    color: var(--text-secondary);
+    background-color: var(--primary-color);
+    font-size: 1.4rem;
+    gap: .5rem;
+}
+
+.profileLinks{
+    display: flex;
+    gap: 1.2rem;
+}
+
+.profileLinks a{
+    color: var(--text-secondary);
+    text-decoration: none;
+    
+}
+
+.profileLinks a:hover{
+    color: var(--text-primary);
+}
+
+@media (max-width: 460px) {
+  .rParent {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  
+}

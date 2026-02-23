@@ -1,19 +1,15 @@
-import React, { useState } from 'react'
+import React, {useContext, useState } from 'react'
 import Styles from './Categories.module.css'
 import { MdOutlineMenu } from "react-icons/md";
 import SideBar from '../../HeaderSection/SideBar/SideBar';
+import { CategoriesContext } from '../../../context/CategoriesContext';
 
 const Categories = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-    const [categories, setCategories] = useState([
-        { id: 1, categoryName: "Wifi" },
-        { id: 2, categoryName: "Zigbee" },
-        { id: 3, categoryName: "Gateway" },
-        { id: 4, categoryName: "Home Essentials" },
-        { id: 5, categoryName: "Accessories" }
-    ]);
+    const {categories} = useContext(CategoriesContext)
 
+    console.log(categories)
 
     return (
         <>
@@ -23,7 +19,7 @@ const Categories = () => {
                 ))}
                 <MdOutlineMenu className={Styles.icon} onClick={() => setIsOpen(true)}/>
             </div>
-            <SideBar categories = {categories}  isOpen={isOpen} setIsOpen={setIsOpen}/>
+            <SideBar categories = {categories.categoryName}  isOpen={isOpen} setIsOpen={setIsOpen}/>
         </>
     )
 }

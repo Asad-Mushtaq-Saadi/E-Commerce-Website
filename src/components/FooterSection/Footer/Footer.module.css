@@ -1,0 +1,22 @@
+.footerTop{
+    background-color: var(--secondary-color-light);
+    padding: 2rem 0rem;
+}
+
+.footerContent{
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+.footerBottom{
+    background-color: var(--primary-color);
+}
+
+@media (max-width: 760px) {
+  .footerContent {
+    flex-direction: column;
+  }
+
+  
+}

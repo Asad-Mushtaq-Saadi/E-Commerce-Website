@@ -1,0 +1,12 @@
+.footerInfoContent p{
+    font-size: 1.6rem;
+    color: var(--text-secondary);
+}
+
+.footerInfoContent{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1.2rem;
+}
