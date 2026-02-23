@@ -3,10 +3,12 @@ import Footer from './components/FooterSection/Footer/Footer.jsx'
 import { CategoriesProvider } from './context/CategoriesContext.jsx'
 import { PagesProvider } from './context/PagesContext.jsx'
 import { LogoProvider } from './context/LogoContext.jsx'
+import { ContactDetailsContextProvider } from './context/ContactDetailsContext.jsx'
 
 const App = () => {
   return (
     <div>
+      <ContactDetailsContextProvider>
       <LogoProvider>
         <PagesProvider>
           <CategoriesProvider>
@@ -15,6 +17,7 @@ const App = () => {
           </CategoriesProvider>
         </PagesProvider>
       </LogoProvider>
+      </ContactDetailsContextProvider>
 
     </div>
   )
