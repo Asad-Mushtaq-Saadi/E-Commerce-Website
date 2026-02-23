@@ -4,27 +4,29 @@
     width: 100%;
     background-color: rgba(0, 0, 0, 0.264);
     top: 0;
+    left: 0;
+    overflow: hidden;
     display: flex;
     justify-content: right;
-    display: none;
+    /* display: none; */
 }
 
 .sideBar{
+    position: relative;
     color: black;
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: 100%;
     width: 70%;
     background-color: var(--tertiary-color);
     font-size: 1.6rem;
     z-index: 100;
+    animation: identifier 0.6s ease forwards;
     
 }
 
-
-
 .sideBar p {
-    border-top: 1px solid var(--text-primary);
+    border-top: 1px solid gray;
     padding: 1rem 1.5rem;
     transition: color 0.3s ease; /* smooth transition */
 }
@@ -38,6 +40,16 @@
     top: 10px;
     align-self:flex-end;
     padding: 2rem;
+}
+
+@keyframes identifier {
+    from{
+        transform: translateX(100%);
+    }
+    tO{
+        transform: translateX(0);
+
+    }
 }
 
 

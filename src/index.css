@@ -20,6 +20,8 @@
   --success-color: #28a745;
   --error-color: #dc3545;
   --warning-color: #ffc107;
+
+  --gap: 1.5rem;
 }
 
 html{

@@ -9,7 +9,6 @@ import SideBar from '../SideBar/SideBar'
 const CategoryBar = () => {
     return (
         <div className={Styles.categoryBarParent}>
-            <SideBar />
             <Container>
                 <div className={Styles.categoryBarContent}>
                 <RoundedButton>Shop</RoundedButton>

@@ -1,21 +1,25 @@
-import React, { useState } from 'react'
+import React from 'react'
 import Styles from './SideBar.module.css'
 import { RxCross2 } from "react-icons/rx";
 
-const SideBar = () => {
+const SideBar = ({ categories, isOpen, setIsOpen }) => {
 
-    const [categories, setCategories] = useState([
-        { id: 1, categoryName: "Wifi" },
-        { id: 2, categoryName: "Zigbee" },
-        { id: 3, categoryName: "Gateway" },
-        { id: 4, categoryName: "Home Essentials" },
-        { id: 5, categoryName: "Accessories" }
-    ]);
+    if (!isOpen) return null;  // same as friend's conditional rendering
 
     return (
-        <div className={Styles.overlay}>
-            <div className={Styles.sideBar}>
-                <RxCross2 className={Styles.icon} />
+        <div
+            className={Styles.overlay}
+            onClick={() => setIsOpen(false)}
+        >
+            <div
+                className={Styles.sideBar}
+                onClick={(e) => e.stopPropagation()}
+            >
+                <RxCross2
+                    className={Styles.icon}
+                    onClick={() => setIsOpen(false)}
+                />
+
                 {categories.map((item) => (
                     <p key={item.id}>
                         {item.categoryName}
