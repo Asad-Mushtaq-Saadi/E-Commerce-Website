@@ -8,7 +8,7 @@ const FooterCategories = () => {
 
     return (
         <div className={Styles.fCatoriesContent}>
-            <h1>Pages</h1>
+            <h1>Categories</h1>
 
             {categories.map((category) => (
                 <p 
