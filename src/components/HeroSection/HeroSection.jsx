@@ -21,7 +21,6 @@ const HeroSection = () => {
     return () => clearInterval(interval);
   }, []);
 
-  // 4️⃣ Next image function (beginner friendly)
   const nextImage = () => {
     if (currentIndex === images.length - 1) {
       setCurrentIndex(0);
@@ -30,7 +29,6 @@ const HeroSection = () => {
     }
   };
 
-  // 5️⃣ Previous image function (beginner friendly)
   const prevImage = () => {
     if (currentIndex === 0) {
       setCurrentIndex(images.length - 1);
