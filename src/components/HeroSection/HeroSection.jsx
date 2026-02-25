@@ -13,7 +13,6 @@ const HeroSection = () => {
 
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  // ✅ Auto change every 4 seconds (working)
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) =>
