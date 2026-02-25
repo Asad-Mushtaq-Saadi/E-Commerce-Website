@@ -22,7 +22,6 @@ const Categories = () => {
         />
       </div>
 
-      {/* ✅ Pass full array */}
       <SideBar
         categories={categories}
         isOpen={isOpen}
