@@ -32,6 +32,12 @@
 
 /* 📱 Mobile view */
 @media (max-width: 768px) {
+
+    .hero{
+        height: 480px;
+    }
+
+
   .leftBtn,
   .rightBtn {
     top: auto;
