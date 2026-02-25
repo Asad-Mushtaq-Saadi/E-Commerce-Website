@@ -9,14 +9,14 @@ button{
     transition: background-color .7s ease   ;
 }
 
-button:hover{
-    background-color: var(--secondary-color);
-    color: white;
+@media (hover: hover) {
+  button:hover {
+    background: var(--secondary-color-light);
+  }
 }
 
-button:active{
-    background-color: var(--secondary-color);
-
+button:active {
+  background: var(--secondary-color-light);
 }
 
 .squareButtonParent button{
