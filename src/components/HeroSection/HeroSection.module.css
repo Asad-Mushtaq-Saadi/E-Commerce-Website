@@ -1,0 +1,33 @@
+.heroParent {
+}
+
+.hero {
+  position: relative;
+  height: 500px;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 1rem;
+}
+
+.heroImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Only position buttons */
+.leftBtn,
+.rightBtn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.leftBtn {
+  left: 2rem;
+}
+
+.rightBtn {
+  right: 2rem;
+}

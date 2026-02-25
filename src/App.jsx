@@ -4,6 +4,7 @@ import { CategoriesProvider } from './context/CategoriesContext.jsx'
 import { PagesProvider } from './context/PagesContext.jsx'
 import { LogoProvider } from './context/LogoContext.jsx'
 import { ContactDetailsContextProvider } from './context/ContactDetailsContext.jsx'
+import HeroSection from './components/HeroSection/HeroSection.jsx'
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
         <PagesProvider>
           <CategoriesProvider>
             <Header />
+            <HeroSection />
             <Footer />
           </CategoriesProvider>
         </PagesProvider>
