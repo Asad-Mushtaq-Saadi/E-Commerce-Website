@@ -6,9 +6,9 @@ import Button from "../Building Blocks/Buttons/SquareButton";
 const HeroSection = () => {
 
   const images = [
-    "https://images.unsplash.com/photo-1501785888041-af3ef285b470",
-    "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee",
-    "https://www.shutterstock.com/image-photo/traveler-woman-arms-raised-triumph-260nw-2457990309.jpg"
+    "https://media.istockphoto.com/id/1466434823/vector/dark-blurred-gradient-vector-abstract-background-design.jpg?s=612x612&w=0&k=20&c=LC1QsuAc_twxwE8cLrEbgsZMXHh0chRBbhBoDJw09YE=",
+    "https://wallpapers.com/images/featured/pretty-blue-background-juafkickt4epl3jt.jpg",
+    "https://wallpapers.com/images/featured/beautiful-blue-background-iz2zgnaheo3etro2.jpg"
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
