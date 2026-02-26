@@ -8,9 +8,11 @@ import { GrDeliver } from "react-icons/gr";
 import { FaUndoAlt } from "react-icons/fa";
 import { MdSupportAgent } from "react-icons/md";
 import SectionHeading from '../../Building Blocks/SectionHeadings/SectionHeading';
+import SectionGap from '../../Building Blocks/SectionGap/SectionGap';
 
 const WhyChoosesUs = () => {
   return (
+    <>
     <div className={Styles.wCUParent}>
         <SectionHeading subHeading="OUR UNIQUENESS" heading="Why Shop With Us" />
       <Container>
@@ -40,6 +42,8 @@ const WhyChoosesUs = () => {
         </div>
       </Container>
     </div>
+    <SectionGap />
+    </>
   )
 }
 

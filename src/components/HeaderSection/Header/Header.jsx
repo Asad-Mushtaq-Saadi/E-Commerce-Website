@@ -4,6 +4,7 @@ import HeaderMainBar from '../HeaderMainBar/HeaderMainBar'
 import CategoryBar from '../CategoryBar/CategoryBar.jsx'
 import ContactBar from '../ContactBar/ContactBar.jsx'
 import Styles from './Header.module.css'
+import SectionGap from '../../Building Blocks/SectionGap/SectionGap.jsx'
 
 
 const header = () => {
@@ -17,6 +18,7 @@ const header = () => {
       <CategoryBar />
       
     </div>
+    
   )
 }
 

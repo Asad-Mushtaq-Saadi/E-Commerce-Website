@@ -5,6 +5,7 @@ import FooterInfo from '../FooterInfo/FooterInfo'
 import FooterPages from '../FooterPages/FooterPages'
 import FooterCategories from '../FooterCategories/FooterCategories'
 import RightReservedBar from '../RightReservedBar/RightReservedBar'
+import SectionGap from '../../Building Blocks/SectionGap/SectionGap'
 
 const Footer = () => {
   return (
@@ -25,6 +26,7 @@ const Footer = () => {
         <RightReservedBar />
       </Container>
       </div>
+      <SectionGap />
       
     </div>
   )

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Styles from "./HeroSection.module.css";
 import Container from "../Building Blocks/Container/Container";
 import Button from "../Building Blocks/Buttons/SquareButton";
+import SectionGap from "../Building Blocks/SectionGap/SectionGap";
 
 const HeroSection = () => {
 
@@ -38,6 +39,7 @@ const HeroSection = () => {
   };
 
   return (
+    <>
     <div className={Styles.heroParent}>
       <Container>
         <div className={Styles.hero}>
@@ -61,7 +63,9 @@ const HeroSection = () => {
 
         </div>
       </Container>
+
     </div>
+    <SectionGap /></>
   );
 };
 
