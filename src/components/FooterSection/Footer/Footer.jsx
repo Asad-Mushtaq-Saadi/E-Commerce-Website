@@ -26,7 +26,6 @@ const Footer = () => {
         <RightReservedBar />
       </Container>
       </div>
-      <SectionGap />
       
     </div>
   )
