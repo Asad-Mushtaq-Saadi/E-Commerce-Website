@@ -8,6 +8,7 @@ import HeroSection from './components/HeroSection/HeroSection.jsx'
 import SectionHeading from './components/Building Blocks/SectionHeadings/SmallHeading.jsx'
 import ChoosesUsCard from './components/WhyChoosesUsSection/ChoosesUsCard/ChoosesUsCard.jsx'
 import WhyChoosesUs from './components/WhyChoosesUsSection/WhyChoosesUs/WhyChoosesUs.jsx'
+import Reviews from './components/ReviewsSection/Reviews/Reviews.jsx'
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
               <Header />
               <HeroSection />
               <WhyChoosesUs />
+              <Reviews />
               <Footer />
             </CategoriesProvider>
           </PagesProvider>

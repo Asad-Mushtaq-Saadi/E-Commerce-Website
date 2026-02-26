@@ -1,0 +1,35 @@
+.totalReviews h1{
+    font-size: 4rem;
+    font-weight: 500;
+}
+.totalReviews p{
+    font-size: 1.5rem;
+}
+
+.totalStars .starIcon{
+    font-size: 2.5rem;
+}
+
+.totalReviews{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+}
+
+@media screen and (max-width: 760px){
+   .totalReviews h1{
+    font-size: 3rem;
+}
+   
+    .totalReviews p{
+    font-size: 1.2rem;
+}
+
+.totalStars .starIcon{
+    font-size: 2rem;
+}
+    
+}
