@@ -6,7 +6,7 @@
 }
 
 
-@media screen and (max-width: 760px){
+@media screen and (max-width: 920px){
     .wCUContent{
         flex-direction: column;
     }
