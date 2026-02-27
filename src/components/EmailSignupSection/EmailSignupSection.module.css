@@ -1,7 +1,9 @@
 .emailSignupSectionContent{
     display: flex;
     justify-content: space-between;
-    background-color: rgb(236, 236, 236);
+    background-color: #f5f6f8;
+  border: 1px solid #e5e7eb;
+
     max-width: 90%;
     padding: 2rem 0rem;
     padding-right: 2rem;
