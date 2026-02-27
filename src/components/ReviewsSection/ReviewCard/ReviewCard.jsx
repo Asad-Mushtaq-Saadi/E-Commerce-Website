@@ -31,4 +31,4 @@ const ReviewCard = ({ name, text, rating, image }) => {
   )
 }
 
-export default ReviewCard
+export default ReviewCard 

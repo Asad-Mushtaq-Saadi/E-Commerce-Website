@@ -1,40 +1,48 @@
-import React, { useState } from 'react'
+import React, { useRef } from 'react'
 import Styles from './ReviewCardsList.module.css'
 import ReviewCard from '../ReviewCard/ReviewCard'
 import SquareButton from '../../Building Blocks/Buttons/SquareButton'
 
 const ReviewCardsList = () => {
 
-    const [index, setIndex] = useState(0)
+    const scrollRef = useRef(null);
 
-    const reviews = [
-        { id: 1, name: "Asad Khan", cast: "Rajput", text: "Amazing product and great build quality. Highly recommended!", rating: 5, image: "https://xsgames.co/randomusers/assets/avatars/male/15.jpg" },
-        { id: 2, name: "Ali Shah", cast: "Syed", text: "Good service and fast delivery. Worth the money.", rating: 4, image: "https://xsgames.co/randomusers/assets/avatars/male/22.jpg" },
-        { id: 3, name: "Ahmed Raza", cast: "Pathan", text: "Great experience. Product quality is really impressive.", rating: 4, image: "https://xsgames.co/randomusers/assets/avatars/male/30.jpg" },
-        { id: 4, name: "Usman Malik", cast: "Mughal", text: "Very satisfied. Design and performance both are excellent.", rating: 5, image: "https://xsgames.co/randomusers/assets/avatars/male/40.jpg" },
-        { id: 5, name: "Bilal Jutt", cast: "Jutt", text: "Excellent product. Smooth performance and good value.", rating: 5, image: "https://xsgames.co/randomusers/assets/avatars/male/50.jpg" }
-    ]
+    const scrollLeft = () => {
+        scrollRef.current.scrollBy({
+            left: -340,   // move left
+            behavior: "smooth"
+        });
+    };
 
-    const next = () => {
-        if (index < reviews.length - 1) {
-            setIndex(index + 1)
-        }
-    }
+    const scrollRight = () => {
+        scrollRef.current.scrollBy({
+            left: 340,    // move right
+            behavior: "smooth"
+        });
+    };
 
-    const prev = () => {
-        if (index > 0) {
-            setIndex(index - 1)
-        }
-    }
+    const reviews = [{ id: 1, name: "Asad Khan", cast: "Rajput", text: "Amazing product and great build quality. Highly recommended!", rating: 5, image: "https://xsgames.co/randomusers/assets/avatars/male/15.jpg" },
+    { id: 2, name: "Ali Shah", cast: "Syed", text: "Good service and fast delivery. Worth the money.", rating: 4, image: "https://xsgames.co/randomusers/assets/avatars/male/22.jpg" },
+    { id: 3, name: "Ahmed Raza", cast: "Pathan", text: "Great experience. Product quality is really impressive.", rating: 4, image: "https://xsgames.co/randomusers/assets/avatars/male/30.jpg" },
+    { id: 4, name: "Usman Malik", cast: "Mughal", text: "Very satisfied. Design and performance both are excellent.", rating: 5, image: "https://xsgames.co/randomusers/assets/avatars/male/40.jpg" },
+    { id: 3, name: "Ahmed Raza", cast: "Pathan", text: "Great experience. Product quality is really impressive.", rating: 4, image: "https://xsgames.co/randomusers/assets/avatars/male/30.jpg" },
+    { id: 4, name: "Usman Malik", cast: "Mughal", text: "Very satisfied. Design and performance both are excellent.", rating: 5, image: "https://xsgames.co/randomusers/assets/avatars/male/40.jpg" },
+    { id: 3, name: "Ahmed Raza", cast: "Pathan", text: "Great experience. Product quality is really impressive.", rating: 4, image: "https://xsgames.co/randomusers/assets/avatars/male/30.jpg" },
+    { id: 4, name: "Usman Malik", cast: "Mughal", text: "Very satisfied. Design and performance both are excellent.", rating: 5, image: "https://xsgames.co/randomusers/assets/avatars/male/40.jpg" },
+    {
+        id: 5, name: "Bilal Jutt", cast: "Jutt", text: "Excellent product. Smooth performance and good value.", rating: 5, image: "https://xsgames.co/randomusers/assets/avatars/male/50.jpg"
+
+    }]
 
     return (
         <div className={Styles.reviewCardsListParent}>
 
-            <div className={Styles.reviewCardsList}
-                
+            <div
+                className={Styles.reviewCardsList}
+                ref={scrollRef}
             >
-                {reviews.map((review) => (
-                    <ReviewCard   style={{ transform: `translateX(-${index * 100}px)` }}
+                {reviews.slice(0, 10).map((review) => (
+                    <ReviewCard
                         key={review.id}
                         name={review.name}
                         text={review.text}
@@ -44,14 +52,15 @@ const ReviewCardsList = () => {
                 ))}
             </div>
 
-            {/* <div className={Styles.reviewCardListButtons}>
-                <SquareButton onClick={prev}>
+            <div className={Styles.reviewCardListButtons}>
+                <SquareButton onClick={scrollLeft}>
                     &lt;
                 </SquareButton>
-                <SquareButton onClick={next}>
+
+                <SquareButton onClick={scrollRight}>
                     &gt;
                 </SquareButton>
-            </div> */}
+            </div>
 
         </div>
     )

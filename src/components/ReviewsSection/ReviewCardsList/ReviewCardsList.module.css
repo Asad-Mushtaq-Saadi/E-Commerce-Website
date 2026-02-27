@@ -1,24 +1,39 @@
+.reviewCardsListParent{
+    position: relative;
+}
+
 .reviewCardsList {
     display: flex;
     gap: 2rem;
     padding-top: 3rem;
-    overflow: auto; /* scroll works */
-    position: relative;
-    scrollbar-width: none; /* Firefox */
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
 }
 
-/* Chrome, Safari, Edge */
 .reviewCardsList::-webkit-scrollbar {
     display: none;
 }
 
-.reviewCardsListParent{
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-}
-
 .reviewCardListButtons{
+    position: absolute;
+    top: 50%;
+    left: 2rem;          
+    right: 2rem;         
     display: flex;
     justify-content: space-between;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+.reviewCardListButtons button{
+    pointer-events: auto;
+}
+
+@media screen and (max-width: 760px){
+    
+
+    .reviewCardListButtons{
+        display: none;
+    }
 }
