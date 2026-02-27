@@ -9,14 +9,14 @@ const ReviewCardsList = () => {
 
   const scrollLeft = () => {
     reviewsRef.current.scrollBy({
-      left: -320,
+      left: -330,
       behavior: 'smooth'
     })
   }
 
   const scrollRight = () => {
     reviewsRef.current.scrollBy({
-      left: 320,
+      left: 330,
       behavior: 'smooth'
     })
   }
