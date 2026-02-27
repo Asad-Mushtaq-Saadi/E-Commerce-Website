@@ -20,16 +20,8 @@
 }
 
 @media screen and (max-width: 760px){
-   .totalReviews h1{
-    font-size: 3rem;
-}
-   
-    .totalReviews p{
-    font-size: 1.2rem;
-}
-
-.totalStars .starIcon{
-    font-size: 2rem;
-}
+  .totalReviews{
+    display: none;
+  }
     
 }
