@@ -27,7 +27,8 @@
 .emailInput {
     width: 50%;
     border: 1px solid transparent;
-    background-color: rgb(255, 255, 255);
+    background-color: #f5f6f8
+;
     font-size: 1.8rem;
     padding: 1rem 2rem;
     border-radius: 25px;
