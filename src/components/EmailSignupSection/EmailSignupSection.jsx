@@ -14,6 +14,7 @@ const EmailSignupSection = () => {
             <div className={Styles.emailSignupSection} >
                 <div className={Styles.emailSignupSectionContent}>
                     <div className={Styles.emailSignupTitle}>
+                        {/* <SmallSectionHeading />  */}
                         <SectionHeading subHeading="SUBSCRIBE" heading="Sign Up Our News Letter" className={Styles.emailHeading} />
                     </div>
                     <div className={Styles.signupEmail}>

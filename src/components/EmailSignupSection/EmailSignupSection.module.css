@@ -9,10 +9,7 @@
     margin-inline: auto;
     gap: 1.5rem;
 }
-.emailHeading{
-    align-items: center;
-    justify-content: center;
-}
+
 
 .signupEmail{
     display: flex;
@@ -50,6 +47,7 @@
     .emailSignupSectionContent{
         flex-direction: column;
         padding-right: 0;
+        max-width: 100%;
     }
 
     .signupEmail{
