@@ -57,6 +57,9 @@
     .signupEmail{
         flex-direction: column;
     }
+    .emailInput{
+        width: 100%;
+    }
     
 }
 
