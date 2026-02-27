@@ -4,6 +4,7 @@ import SectionHeading from '../../Building Blocks/SectionHeadings/SectionHeading
 import Container from '../../Building Blocks/Container/Container'
 import { FaStar, FaStarHalf, FaRegUser } from "react-icons/fa";
 import SectionGap from '../../Building Blocks/SectionGap/SectionGap';
+import ReviewCardsList from '../ReviewCardsList/ReviewCardsList';
 
 
 const Reviews = () => {
@@ -23,6 +24,10 @@ const Reviews = () => {
                     </div>
                     <p>1000 reviews</p>
                 </div>
+
+      <ReviewCardsList />
+                
+
             </Container>
 
         </div>

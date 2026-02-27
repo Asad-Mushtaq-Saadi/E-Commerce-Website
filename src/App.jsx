@@ -7,6 +7,8 @@ import { ContactDetailsContextProvider } from './context/ContactDetailsContext.j
 import HeroSection from './components/HeroSection/HeroSection.jsx'
 import WhyChoosesUs from './components/WhyChoosesUsSection/WhyChoosesUs/WhyChoosesUs.jsx'
 import Reviews from './components/ReviewsSection/Reviews/Reviews.jsx'
+import ReviewCard from './components/ReviewsSection/ReviewCard/ReviewCard.jsx'
+import ReviewCardsList from './components/ReviewsSection/ReviewCardsList/ReviewCardsList.jsx'
 
 const App = () => {
   return (
@@ -15,11 +17,13 @@ const App = () => {
         <LogoProvider>
           <PagesProvider>
             <CategoriesProvider>
+
               <Header />
               <HeroSection />
               <WhyChoosesUs />
               <Reviews />
               <Footer />
+            
             </CategoriesProvider>
           </PagesProvider>
         </LogoProvider>

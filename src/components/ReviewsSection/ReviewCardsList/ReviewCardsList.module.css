@@ -1,0 +1,13 @@
+.reviewCardsList {
+    display: flex;
+    gap: 2rem;
+    padding-top: 3rem;
+    overflow: auto; /* scroll works */
+
+    scrollbar-width: none; /* Firefox */
+}
+
+/* Chrome, Safari, Edge */
+.reviewCardsList::-webkit-scrollbar {
+    display: none;
+}

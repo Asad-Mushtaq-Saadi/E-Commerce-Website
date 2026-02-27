@@ -1,0 +1,48 @@
+.reviewCard {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 1.5rem;
+
+  flex: 0 0 300px;   /* fixed width */
+  width: 900px;      /* extra safety */
+
+  background-color: #f5f6f8;
+  padding: 2rem;
+  border-radius: 1.5rem;
+  border: 1px solid #e5e7eb;
+}
+
+.reviewImage {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.reviewsContent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.8rem;
+}
+
+.userName {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.ratings {
+  display: flex;
+  gap: 0.3rem;
+  color: #facc15; /* star yellow */
+  font-size: 1.4rem;
+}
+
+.reviewText {
+  font-size: 1.6rem;
+  color: #555;
+  margin: 0;
+  line-height: 1.6;
+}
