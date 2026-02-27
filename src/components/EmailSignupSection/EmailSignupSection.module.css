@@ -55,6 +55,8 @@
         flex-direction: column;
     }
     .signupEmail{
+        justify-content: center;
+        align-items: center;
         flex-direction: column;
     }
     .emailInput{
