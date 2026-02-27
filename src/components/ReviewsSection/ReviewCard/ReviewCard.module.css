@@ -4,7 +4,7 @@
   flex-direction: column;
   gap: 1.5rem;
 
-  flex: 0 0 300px;   /* fixed width */
+  flex: 0 0 280px;   /* fixed width */
   width: 900px;      /* extra safety */
 
   background-color: #f5f6f8;
