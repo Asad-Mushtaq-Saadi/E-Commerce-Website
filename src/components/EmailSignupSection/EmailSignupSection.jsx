@@ -1,10 +1,11 @@
 import React from 'react'
 import Styles from './EmailSignupSection.module.css'
-import SectionHeading from '../Building Blocks/SectionHeadings/SectionHeading'
+import SectionHeading from '../Building Blocks/SectionHeadings/SmallHeading'
 import RoundedButton from '../Building Blocks/Buttons/RoundedButton'
 import SectionGap from '../Building Blocks/SectionGap/SectionGap'
 import Container from '../Building Blocks/Container/Container'
 import InputStyles from '../Building Blocks/SearchBar/SearchBar.module.css'
+
 
 
 const EmailSignupSection = () => {
