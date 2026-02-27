@@ -1,0 +1,65 @@
+.emailSignupSectionContent{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(236, 236, 236);
+    max-width: 90%;
+    padding: 2rem 0rem;
+    padding-right: 2rem;
+    border-radius: 1rem;
+    margin-inline: auto;
+    gap: 2rem;
+}
+.emailHeading{
+    align-items: center;
+    justify-content: center;
+}
+
+.signupEmail{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 1rem;
+    flex: 5;
+    width: 100%;
+}
+
+.emailSignupSection{
+    margin: auto;
+}
+
+/*  */
+
+.emailInput {
+    width: 50%;
+    border: 1px solid transparent;
+    background-color: rgb(255, 255, 255);
+    font-size: 1.8rem;
+    padding: 1rem 2rem;
+    border-radius: 25px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.emailInput::placeholder {
+    color: gray;
+    font-size: 1.6rem;
+    opacity: 1;
+}
+
+.emailInput:focus {
+    border-color: var(--primary-color);
+}
+
+@media screen  and (max-width: 960px){
+    .emailSignupSectionContent{
+        flex-direction: column;
+    }
+    .signupEmail{
+        flex-direction: column;
+    }
+    
+}
+
+
+
+

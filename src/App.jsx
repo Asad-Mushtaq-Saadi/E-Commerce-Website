@@ -9,6 +9,7 @@ import WhyChoosesUs from './components/WhyChoosesUsSection/WhyChoosesUs/WhyChoos
 import Reviews from './components/ReviewsSection/Reviews/Reviews.jsx'
 import ReviewCard from './components/ReviewsSection/ReviewCard/ReviewCard.jsx'
 import ReviewCardsList from './components/ReviewsSection/ReviewCardsList/ReviewCardsList.jsx'
+import EmailSignupSection from './components/EmailSignupSection/EmailSignupSection.jsx'
 
 const App = () => {
   return (
@@ -22,6 +23,7 @@ const App = () => {
               <HeroSection />
               <WhyChoosesUs />
               <Reviews />
+              <EmailSignupSection />
               <Footer />
             
             </CategoriesProvider>

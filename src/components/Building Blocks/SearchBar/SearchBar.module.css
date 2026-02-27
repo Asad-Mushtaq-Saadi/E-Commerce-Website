@@ -6,7 +6,7 @@
     color: rgba(0, 0, 0, 0.573);
 }
 
-.searchBar {
+.searchBar, .emailInput {
     width: 100%;
     border: 1px solid transparent;
     background-color: var( --background-search);
@@ -19,13 +19,13 @@
     transition: border-color 0.3s ease, background-color 0.3s ease;
 }
 
-.searchBar::placeholder {
+.searchBar, .emailInput::placeholder {
     color: gray;
     font-size: 1.6rem;
     opacity: 1;
 }
 
-.searchBar:focus {
+.searchBar, .emailInput:focus {
     border-color: var(--primary-color);
 }
 
