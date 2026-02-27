@@ -1,10 +1,22 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Styles from './SideBar.module.css'
 import { RxCross2 } from "react-icons/rx";
 
 const SideBar = ({ categories, isOpen, setIsOpen }) => {
 
-    if (!isOpen) return null;  // same as friend's conditional rendering
+    useEffect(() => {
+        if (isOpen) {
+            document.body.style.overflow = "hidden";
+        } else {
+            document.body.style.overflow = "auto";
+        }
+
+        return () => {
+            document.body.style.overflow = "auto";
+        };
+    }, [isOpen]);
+
+    if (!isOpen) return null;
 
     return (
         <div
