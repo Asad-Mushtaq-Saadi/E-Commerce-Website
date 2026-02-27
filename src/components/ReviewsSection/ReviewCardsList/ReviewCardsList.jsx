@@ -44,14 +44,14 @@ const ReviewCardsList = () => {
                 ))}
             </div>
 
-            <div className={Styles.reviewCardListButtons}>
+            {/* <div className={Styles.reviewCardListButtons}>
                 <SquareButton onClick={prev}>
                     &lt;
                 </SquareButton>
                 <SquareButton onClick={next}>
                     &gt;
                 </SquareButton>
-            </div>
+            </div> */}
 
         </div>
     )
