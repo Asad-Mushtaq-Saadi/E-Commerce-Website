@@ -11,6 +11,7 @@ import ReviewCard from './components/ReviewsSection/ReviewCard/ReviewCard.jsx'
 import ReviewCardsList from './components/ReviewsSection/ReviewCardsList/ReviewCardsList.jsx'
 import EmailSignupSection from './components/EmailSignupSection/EmailSignupSection.jsx'
 import ProductCard from './components/Building Blocks/ProductCard/ProductCard.jsx'
+import ProductsCollection from './components/ProductsList/ProductsList.jsx'
 
 const App = () => {
   return (
@@ -20,14 +21,15 @@ const App = () => {
           <PagesProvider>
             <CategoriesProvider>
 
-              {/* <Header />
+              <Header />
               <HeroSection />
+              <ProductsCollection />
               <WhyChoosesUs />
               <Reviews />
               <EmailSignupSection />
               <Footer />
-             */}
-             <ProductCard />
+            
+             {/* <ProductCard /> */}
             </CategoriesProvider>
           </PagesProvider>
         </LogoProvider>
