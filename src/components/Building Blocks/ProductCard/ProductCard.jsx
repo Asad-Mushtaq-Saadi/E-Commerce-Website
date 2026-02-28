@@ -20,7 +20,7 @@ const ProductCard = () => {
             <div className={Styles.productCardBottom}>
                 <div className={Styles.productCardDetails}>
                     <p>ZENTRIX</p>
-                    <h1>Switch dControler 10A</h1>
+                    <h1>Switch dControler 10A kjas hdj jsadjsa jis jhsaid hsaudjisah iudauashu </h1>
                     <p>Rs.<span>10000</span> </p>
                 </div>
                 <div className={Styles.moreDetailIcon}>
