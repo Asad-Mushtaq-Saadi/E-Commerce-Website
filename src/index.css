@@ -15,8 +15,11 @@
   --text-secondary: #ffffff;
 
   --background-primary: #ffffff;
-  --background-secondary: #f1f3f5;
+  --background-secondary: rgb(241, 241, 241);
   --background-search : #eeeeee;
+
+  --card-logo-text-color: rgb(184, 184, 184);
+  --border-color:  rgb(228, 228, 228);
 
   --success-color: #28a745;
   --error-color: #dc3545;
