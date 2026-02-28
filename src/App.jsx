@@ -10,6 +10,7 @@ import Reviews from './components/ReviewsSection/Reviews/Reviews.jsx'
 import ReviewCard from './components/ReviewsSection/ReviewCard/ReviewCard.jsx'
 import ReviewCardsList from './components/ReviewsSection/ReviewCardsList/ReviewCardsList.jsx'
 import EmailSignupSection from './components/EmailSignupSection/EmailSignupSection.jsx'
+import ProductCard from './components/Building Blocks/ProductCard/ProductCard.jsx'
 
 const App = () => {
   return (
@@ -19,13 +20,14 @@ const App = () => {
           <PagesProvider>
             <CategoriesProvider>
 
-              <Header />
+              {/* <Header />
               <HeroSection />
               <WhyChoosesUs />
               <Reviews />
               <EmailSignupSection />
               <Footer />
-            
+             */}
+             <ProductCard />
             </CategoriesProvider>
           </PagesProvider>
         </LogoProvider>
