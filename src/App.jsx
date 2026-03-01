@@ -7,6 +7,7 @@ import { ContactDetailsContextProvider } from './context/ContactDetailsContext.j
 import Home from './pages/Home.jsx'
 import Login from './components/Auth/Login.jsx'
 import Register from './components/Auth/Register.jsx'
+import ForgetPassword from './components/Auth/ForgetPassword.jsx'
 
 const App = () => {
   return (
@@ -19,7 +20,8 @@ const App = () => {
               <Header />
               {/* <Home /> */}
               {/* <Login /> */}
-              <Register />
+              {/* <Register /> */}
+              <ForgetPassword />
               <Footer />
 
             </CategoriesProvider>

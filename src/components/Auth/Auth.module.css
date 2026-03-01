@@ -21,6 +21,15 @@
     font-size: 3rem;
 }
 
+.fPtitle h1{
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.fPtitle p{
+    font-size: 1.4rem;
+    margin-bottom: -10px;
+}
 @media screen and (max-width: 760px) {
     .links {
         flex-direction: column;
@@ -62,9 +71,15 @@
     border-color: var(--primary-color);
 }
 
-.buttons {
+.loginButtons {
     display: flex;
     justify-content: center;
+    gap: 1rem;
+
+}
+.forgetPasswordButtons {
+    display: flex;
+    justify-content: space-between;
     gap: 1rem;
 
 }
@@ -74,6 +89,8 @@
     justify-content: space-between;
 
 }
+
+
 
 
 .links {

@@ -13,7 +13,7 @@ const Login = () => {
                         <input type="email" placeholder="Email" className={styles.input} />
                         <input type="password" placeholder="password" className={styles.input} />
                     </div>
-                    <div className={styles.buttons}>
+                    <div className={styles.loginButtons}>
                         <SquareButton>Login</SquareButton>
                     </div>
 
