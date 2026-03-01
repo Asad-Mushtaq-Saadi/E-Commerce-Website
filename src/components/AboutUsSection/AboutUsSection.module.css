@@ -1,0 +1,36 @@
+.aboutSection {
+  background-color: #ffffff;
+}
+
+.container {
+  width: 100%;
+}
+
+.mainHeading {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--secondary-color);
+  margin-bottom: 2rem;
+}
+
+.intro {
+  font-size: 1.5rem;
+  line-height: 1.9;
+  color: var(--text-primary);
+  margin-bottom: 3rem;
+}
+
+.subHeading {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--secondary-color);
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.paragraph {
+  font-size: 1.5rem;
+  line-height: 1.9;
+  color: var(--text-primary);
+  margin-bottom: 1.5rem;
+}

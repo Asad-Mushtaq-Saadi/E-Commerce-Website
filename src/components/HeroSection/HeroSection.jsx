@@ -7,9 +7,9 @@ import SectionGap from "../Building Blocks/SectionGap/SectionGap";
 const HeroSection = () => {
 
   const images = [
-    "https://images.unsplash.com/photo-1501785888041-af3ef285b470",
-    "https://t4.ftcdn.net/jpg/03/78/61/05/360_F_378610575_cj5Yfl66HRJP6XbTzJ198lNzZ0D5hv79.jpg",
-    "https://thumbs.dreamstime.com/b/top-down-view-open-paint-can-serenity-soft-blue-shade-surrounded-hydrangeas-match-color-316052300.jpg"
+    "https://images.unsplash.com/photo-1622866654068-ba9bba536a81?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "https://plus.unsplash.com/premium_photo-1770646143936-6e64df320e24?q=80&w=1227&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "https://plus.unsplash.com/premium_photo-1670438167770-89910cf3be8f?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
