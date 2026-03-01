@@ -8,7 +8,7 @@ const Login = () => {
         <div className={styles.parent}>
             <Container>
                 <div className={styles.loginBox}>
-
+                      
                     <div className={styles.inputs}>
                         <input type="email" placeholder="Email" className={styles.input} />
                         <input type="password" placeholder="password" className={styles.input} />
