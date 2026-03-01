@@ -6,6 +6,7 @@ import { LogoProvider } from './context/LogoContext.jsx'
 import { ContactDetailsContextProvider } from './context/ContactDetailsContext.jsx'
 import Home from './pages/Home.jsx'
 import Login from './components/Auth/Login.jsx'
+import Register from './components/Auth/Register.jsx'
 
 const App = () => {
   return (
@@ -17,7 +18,8 @@ const App = () => {
 
               <Header />
               {/* <Home /> */}
-              <Login />
+              {/* <Login /> */}
+              <Register />
               <Footer />
 
             </CategoriesProvider>
