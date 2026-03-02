@@ -7,14 +7,14 @@ const ForgetPassword = () => {
     return (
         <div className={styles.parent}>
             <Container>
-                <div className={styles.loginBox}>
-                    <div className={styles.fPtitle}>
+                <div className={styles.formBox}>
+                    <div className={styles.title}>
                     <h1>Reset Password</h1>
-                    <p>Your password will reset soon</p>
                     </div>
 
                     <div className={styles.inputs}>
-                        <input type="text" placeholder="First Name" className={styles.input} />
+                        <input type="text" placeholder="New Password" className={styles.input} />
+                        <input type="text" placeholder="Confirm Password" className={styles.input} />
                     </div>
                     <div className={styles.forgetPasswordButtons}>
                         <SquareButton>Reset</SquareButton>

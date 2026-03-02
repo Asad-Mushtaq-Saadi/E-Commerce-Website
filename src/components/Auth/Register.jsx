@@ -7,7 +7,7 @@ const Register = () => {
     return (
         <div className={styles.parent}>
             <Container>
-                <div className={styles.loginBox}>
+                <div className={styles.formBox}>
                     <div className={styles.title}>
                     <h1>Register</h1>
                     </div>
@@ -16,7 +16,7 @@ const Register = () => {
                         <input type="text" placeholder="First Name" className={styles.input} />
                         <input type="text" placeholder="Last Name" className={styles.input} />
                         <input type="email" placeholder="Email" className={styles.input} />
-                        <input type="date" placeholder="Enter Date" className={styles.input} />
+                        {/* <input type="date" placeholder="Enter Date" className={styles.input} /> */}
                         <input type="password" placeholder="Password" className={styles.input} />
                     </div>
                     <div className={styles.registerButtons}>

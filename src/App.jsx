@@ -8,6 +8,7 @@ import Home from './pages/Home.jsx'
 import Login from './components/Auth/Login.jsx'
 import Register from './components/Auth/Register.jsx'
 import ForgetPassword from './components/Auth/ForgetPassword.jsx'
+import ContactUsForm from './components/ContactUsSection/ContactUsForm/ContactUsForm.jsx'
 
 const App = () => {
   return (
@@ -21,7 +22,8 @@ const App = () => {
               {/* <Home /> */}
               {/* <Login /> */}
               {/* <Register /> */}
-              <ForgetPassword />
+              <ContactUsForm />
+              {/* <ForgetPassword /> */}
               <Footer />
 
             </CategoriesProvider>

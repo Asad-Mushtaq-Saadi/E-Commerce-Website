@@ -3,7 +3,9 @@
     padding: 5rem 0;
 }
 
-.loginBox {
+
+
+.formBox {
     max-width: 400px;
     background: rgb(234, 234, 234);
     padding: 2rem 3rem;
@@ -18,25 +20,12 @@
 
 .title h1{
     text-align: center;
-    font-size: 3rem;
+    font-size: 2.5rem;
+    font-weight: 500;
 }
 
-.fPtitle h1{
-    font-size: 2rem;
-    font-weight: 600;
-}
 
-.fPtitle p{
-    font-size: 1.4rem;
-    margin-bottom: -10px;
-}
-@media screen and (max-width: 760px) {
-    .links {
-        flex-direction: column;
-        align-items: center;
-        user-select: none;
-    }
-}
+/* Inputs */
 
 
 .inputs {
@@ -71,11 +60,13 @@
     border-color: var(--primary-color);
 }
 
+/* Buttons */
+
 .loginButtons {
     display: flex;
     justify-content: center;
     gap: 1rem;
-
+    
 }
 .forgetPasswordButtons {
     display: flex;
@@ -91,7 +82,7 @@
 }
 
 
-
+/* Text Links */
 
 .links {
     display: flex;
@@ -110,4 +101,11 @@
 
 .links span:hover {
     color: var(--primary-color);
+}
+@media screen and (max-width: 760px) {
+    .links {
+        flex-direction: column;
+        align-items: center;
+        user-select: none;
+    }
 }
