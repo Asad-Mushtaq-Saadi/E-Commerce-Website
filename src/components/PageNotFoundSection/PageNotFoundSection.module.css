@@ -1,0 +1,29 @@
+.pNFContent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.5rem;
+    height: 60vh;
+}
+
+.pNFContent h1{
+    font-size: 4rem;
+    text-align: center;
+}
+
+.pNFContent p{
+    font-size: 2rem;
+    text-align: center;
+}
+
+@media screen and (max-width: 560px) {
+    .pNFContent h1{
+    font-size: 3rem;
+}
+
+.pNFContent p{
+    font-size: 1.5rem;
+}
+}
+

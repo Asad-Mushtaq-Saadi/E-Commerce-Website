@@ -9,6 +9,7 @@ import Login from './components/Auth/Login.jsx'
 import Register from './components/Auth/Register.jsx'
 import ForgetPassword from './components/Auth/ForgetPassword.jsx'
 import ContactUsForm from './components/ContactUsSection/ContactUsForm/ContactUsForm.jsx'
+import PageNotFoundSection from './components/PageNotFoundSection/PageNotFoundSection.jsx'
 
 const App = () => {
   return (
@@ -22,7 +23,8 @@ const App = () => {
               {/* <Home /> */}
               {/* <Login /> */}
               {/* <Register /> */}
-              <ContactUsForm />
+              {/* <ContactUsForm /> */}
+              <PageNotFoundSection />
               {/* <ForgetPassword /> */}
               <Footer />
 
