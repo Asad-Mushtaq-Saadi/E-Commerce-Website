@@ -1,10 +1,10 @@
-    .contactFormParent {
-    padding: 4rem 0rem;
-    }
+.contactFormParent {
+  padding: 4rem 0rem;
+}
 
 .contactFormContent {
   max-width: 500px;
-  margin: auto;
+  width: 100%;
 }
 
 .heading {
@@ -15,7 +15,7 @@
 }
 
 .subHeading {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
   text-align: center;
   color: #777;
   margin-top: 0.5rem;
@@ -26,6 +26,10 @@
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  border: 1px solid #ccc;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08); /* shadow added */
 }
 
 .row {
@@ -40,7 +44,7 @@
 }
 
 .inputGroup label {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
   margin-bottom: 0.5rem;
   font-weight: 500;
   color: #333;
@@ -54,6 +58,10 @@
   font-size: 1.5rem;
   background-color: #fff;
   outline: none;
+}
+
+.mobileOption {
+  display: none;
 }
 
 textarea {
@@ -70,11 +78,59 @@ textarea {
   cursor: pointer;
 }
 
+.mapContainer {
+  width: 100%;
+  
+  max-width: 600px;
+}
+.map{
+    display: flex;
+flex-direction: column;
+gap: 2rem;
+}
+
+.map h1 {
+    font-size: 3rem;
+}
+
+.mapContainer iframe {
+  height: 500px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.fromAndMap {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 5rem;
+}
+
 /* Responsive */
 @media (max-width: 560px) {
-  
-
- .nameRow {
+  .fromAndMap{
     flex-direction: column;
   }
+
+  .row {
+    flex-direction: column;
+  }
+}
+@media (max-width: 960px) {
+  .fromAndMap{
+    flex-direction: column;
+  }
+
+  .mapContainer{
+    max-width: 100%;
+  }
+
+  .mapContainer iframe{
+    height: 400px;
+  }
+
+  .map h1{
+    display: none;
+  }
+  
 }
