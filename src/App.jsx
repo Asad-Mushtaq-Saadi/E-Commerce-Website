@@ -10,6 +10,7 @@ import Register from './components/Auth/Register.jsx'
 import ForgetPassword from './components/Auth/ForgetPassword.jsx'
 import ContactUsForm from './components/ContactUsSection/ContactUsForm/ContactUsForm.jsx'
 import PageNotFoundSection from './components/PageNotFoundSection/PageNotFoundSection.jsx'
+import PageNotFound from './pages/PageNotFound.jsx'
 
 const App = () => {
   return (
@@ -20,11 +21,12 @@ const App = () => {
             <CategoriesProvider>
 
               <Header />
-              {/* <Home /> */}
+              <Home />
+              {/* <PageNotFound /> */}
               {/* <Login /> */}
               {/* <Register /> */}
               {/* <ContactUsForm /> */}
-              <PageNotFoundSection />
+              {/* <PageNotFoundSection /> */}
               {/* <ForgetPassword /> */}
               <Footer />
 
