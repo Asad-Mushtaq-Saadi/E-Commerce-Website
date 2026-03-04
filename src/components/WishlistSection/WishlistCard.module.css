@@ -57,11 +57,11 @@
 .remove {
   display: flex;
   justify-content: center;
+  padding-right: 2rem;
 }
 
 .trashIcon {
   font-size: 1.8rem;
-  padding-right: 2rem;
   cursor: pointer;
 }
 
@@ -69,28 +69,26 @@
   color: red;
 }
 
-/* Responsive */
-@media (max-width: 900px) {
-  .wishlistCardContent {
-    /* flex-direction: column; */
-    /* align-items: center; */
-  }
 
-  .remove {
-  }
-}
 
 @media (max-width: 600px) {
-  .left {
-    /* flex-direction: column; */
+    .wishlistCardContent {
+      flex-direction: column;
+      padding: 2rem 0rem;
+      gap: 1rem;
+    }
+    .left {
+    flex-direction: column;
     align-items: center;
-    /* text-align: center; */
+    text-align: center;
   }
 
   .remove {
-    align-self: flex-end;
-    padding-bottom: 1rem;
+    align-self: center;
+    padding: 0;
   }
+
+  
 
   .selectBtn {
     margin: 0 auto;
