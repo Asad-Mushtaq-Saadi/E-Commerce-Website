@@ -22,7 +22,7 @@ const Register = () => {
                     </div>
                     <div className={styles.registerButtons}>
                         <SquareButton>Register</SquareButton>
-                        <Link to={'/home'} className={styles.link}>
+                        <Link to={'/'} className={styles.link}>
                             <SquareButton>Return To Store</SquareButton>
 
                         </Link>

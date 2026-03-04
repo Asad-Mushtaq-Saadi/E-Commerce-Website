@@ -12,7 +12,7 @@ const Logo = () => {
   return (
     <div className={Styles.logo}>
       <Link
-        to={'/home'}
+        to={'/'}
         className={Styles.logoName}
         onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
       >
