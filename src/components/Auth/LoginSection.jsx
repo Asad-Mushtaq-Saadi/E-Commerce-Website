@@ -21,7 +21,7 @@ const Login = () => {
                     <div className={styles.links}>
                         <Link to={'/forget-password'} className={styles.link}><span>Forgot your password?</span></Link>
                         <Link to={'/register'} className={styles.link}><span>Create account</span></Link>
-                        <Link to={'/'} className={styles.link}><span>Return to Store</span></Link>
+                        <Link to={'/home'} className={styles.link}><span>Return to Store</span></Link>
                         
                     </div>
 
