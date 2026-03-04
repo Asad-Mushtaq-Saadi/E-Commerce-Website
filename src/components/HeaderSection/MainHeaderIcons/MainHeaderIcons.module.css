@@ -12,6 +12,8 @@
     font-size: 2.2rem;
     cursor: pointer;
     transition: color 0.5s ease;
+    color: var(--secondary-color);
+    text-decoration: none;
 }
 
 .icon:hover {

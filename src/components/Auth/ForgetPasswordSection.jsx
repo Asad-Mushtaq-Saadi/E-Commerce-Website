@@ -2,6 +2,8 @@ import React from "react";
 import styles from "../Auth/Auth.module.css";
 import SquareButton from "../Building Blocks/Buttons/SquareButton";
 import Container from "../Building Blocks/Container/Container";
+import { Link } from 'react-router-dom'
+
 
 const ForgetPassword = () => {
     return (
@@ -18,7 +20,10 @@ const ForgetPassword = () => {
                     </div>
                     <div className={styles.forgetPasswordButtons}>
                         <SquareButton>Reset</SquareButton>
-                        <SquareButton>Return To Store</SquareButton>
+                        <Link to={'/home'} className={styles.link}>
+                            <SquareButton>Return To Store</SquareButton>
+
+                        </Link>
                     </div>
 
                 </div>
@@ -27,4 +32,4 @@ const ForgetPassword = () => {
     );
 };
 
-export default ForgetPassword
+export default ForgetPassword 
