@@ -1,7 +1,8 @@
-.logo h1{
+.logo .logoName{
     color: var(--primary-color);
     font-size: 4rem;
+    font-weight: 600;
     user-select: none;
     cursor: pointer;
-    /* padding-right:30px; */
+    text-decoration: none;
 }
