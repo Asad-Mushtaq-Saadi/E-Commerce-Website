@@ -10,7 +10,13 @@ const MainHeaderIcons = () => {
     return (
         <div className={Styles.iconsParent}>
             <div className={Styles.icons}>
-                <IoSearch className={Styles.icon} />
+                <Link
+                    to={'/search'}
+                    className={`${Styles.icon} ${Styles.searchIcon}`}
+                    onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+                >
+                    <IoSearch />
+                </Link>
                 <Link
                     to={'/login'}
                     className={Styles.icon}
@@ -25,7 +31,13 @@ const MainHeaderIcons = () => {
                 >
                     <FaRegHeart />
                 </Link>
-                <HiOutlineShoppingCart className={Styles.icon} />
+                <Link
+                    to={'/cart'}
+                    className={Styles.icon}
+                    onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+                >
+                    <HiOutlineShoppingCart />
+                </Link>
             </div>
 
 

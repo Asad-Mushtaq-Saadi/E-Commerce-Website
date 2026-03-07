@@ -1,0 +1,19 @@
+.pPMainImage{
+    display: flex;
+}
+
+.pPImageParent{
+    display: flex;
+    flex-direction: column;
+}
+
+.pPMainImage .mainImage{
+    
+  max-width: 100%;
+  height: auto;
+
+}
+
+.pPImage{
+    width: 200px;
+}

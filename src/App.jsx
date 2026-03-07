@@ -12,9 +12,11 @@ import TermsAndConditions from './pages/TermsAndConditions.jsx'
 
 import Layout from './Layout.jsx'
 import Login from './pages/Login.jsx'
+import Cart from './pages/Cart.jsx'
 import Wishlist from './pages/Wishlist.jsx'
 import Register from './pages/Register.jsx'
 import ForgetPassword from './pages/ForgetPassword.jsx'
+import Search from './pages/Search.jsx'
 
 const App = () => {
   return (
@@ -38,6 +40,8 @@ const App = () => {
                   <Route path='login' element={<Login />} />
                   <Route path='register' element={<Register />} />
                   <Route path='forget-password' element={<ForgetPassword />} />
+                  <Route path='cart' element={<Cart />} />
+                  <Route path='search' element={<Search />} />
                 </Route> 
               </Routes>
 

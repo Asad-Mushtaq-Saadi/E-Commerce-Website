@@ -6,6 +6,9 @@
 .icons .icon:first-child {
     display: none;
 }
+.searchIcon{
+    display: none;
+}
 
 .icon {
     
@@ -24,4 +27,8 @@
   .icons .icon:first-child {
     display: block;
   }
+
+  .searchIcon{
+    display: flex;
+}
 }
