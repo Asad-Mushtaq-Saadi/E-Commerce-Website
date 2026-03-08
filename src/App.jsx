@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route} from 'react-router-dom'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { CategoriesProvider } from './context/CategoriesContext.jsx'
 import { PagesProvider } from './context/PagesContext.jsx'
 import { LogoProvider } from './context/LogoContext.jsx'
@@ -17,40 +17,42 @@ import Wishlist from './pages/Wishlist.jsx'
 import Register from './pages/Register.jsx'
 import ForgetPassword from './pages/ForgetPassword.jsx'
 import Search from './pages/Search.jsx'
+import ProductPage from './pages/ProductPage.jsx'
 
 const App = () => {
   return (
-    
+
     <div>
       <BrowserRouter >
-      <ContactDetailsContextProvider>
-        <LogoProvider>
-          <PagesProvider>
-            <CategoriesProvider>
+        <ContactDetailsContextProvider>
+          <LogoProvider>
+            <PagesProvider>
+              <CategoriesProvider>
 
-              <Routes>
-                <Route path='/' element={<Layout />} >
-                  <Route index element={<Home />} />
-                  <Route path='home' element={<Home />} />
-                  <Route path='about-us' element={<AboutUs />} />
-                  <Route path='contact-us' element={<ContactUs />} />
-                  <Route path='privacy-policy' element={<PrivacyPolicy />} />
-                  <Route path='terms-&-conditions' element={<TermsAndConditions />} />
-                  <Route path='wishlist' element={<Wishlist />} />
-                  <Route path='login' element={<Login />} />
-                  <Route path='register' element={<Register />} />
-                  <Route path='forget-password' element={<ForgetPassword />} />
-                  <Route path='cart' element={<Cart />} />
-                  <Route path='search' element={<Search />} />
-                </Route> 
-              </Routes>
+                <Routes>
+                  <Route path='/' element={<Layout />} >
+                    <Route index element={<Home />} />
+                    <Route path='home' element={<Home />} />
+                    <Route path='about-us' element={<AboutUs />} />
+                    <Route path='contact-us' element={<ContactUs />} />
+                    <Route path='privacy-policy' element={<PrivacyPolicy />} />
+                    <Route path='terms-&-conditions' element={<TermsAndConditions />} />
+                    <Route path='wishlist' element={<Wishlist />} />
+                    <Route path='login' element={<Login />} />
+                    <Route path='register' element={<Register />} />
+                    <Route path='forget-password' element={<ForgetPassword />} />
+                    <Route path='cart' element={<Cart />} />
+                    <Route path='search' element={<Search />} />
+                    <Route path='product-page' element={<ProductPage />} />
+                  </Route>
+                </Routes>
 
-            </CategoriesProvider>
-          </PagesProvider>
-        </LogoProvider>
-      </ContactDetailsContextProvider>
+              </CategoriesProvider>
+            </PagesProvider>
+          </LogoProvider>
+        </ContactDetailsContextProvider>
 
-                </BrowserRouter>
+      </BrowserRouter>
     </div>
   )
 }

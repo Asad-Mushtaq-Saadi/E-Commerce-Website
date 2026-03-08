@@ -1,0 +1,14 @@
+.pPSectionContentt{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 9rem;
+}
+
+@media (max-width: 860px){
+    .pPSectionContentt{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
