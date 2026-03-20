@@ -16,8 +16,7 @@ const Categories = () => {
     selectedCategory.setCategory(categoryName);
     setActiveCategory(categoryName); 
   };
-  // console.log(activeCategory);
-  // console.log(selectedCategory);
+
   
 
   return (

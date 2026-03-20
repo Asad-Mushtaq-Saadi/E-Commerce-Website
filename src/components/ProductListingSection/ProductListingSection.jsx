@@ -5,7 +5,7 @@ import SearchBar from '../Building Blocks/SearchBar/SearchBar'
 import ProductCard from '../Building Blocks/ProductCard/ProductCard'
 import { CategoriesContext } from '../../context/CategoriesContext'
 import SectionGap from '../Building Blocks/SectionGap/SectionGap'
-import ProductService from '../../services/productService'
+import ProductService from '../../services/ProductService'
 import selectedCategoryService from '../../services/selectedCategory' // Import service
 
 const ProductListingSection = () => {
