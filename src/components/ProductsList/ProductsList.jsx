@@ -1,50 +1,56 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import Container from '../Building Blocks/Container/Container'
 import Product from '../Building Blocks/ProductCard/ProductCard'
 import Styles from './ProductsList.module.css'
 import ProductImage from '../../assets/Images/Shoes Image.jpg'
 import SectionHeading from '../Building Blocks/SectionHeadings/SectionHeadingWithButton'
 import SectionGap from '../Building Blocks/SectionGap/SectionGap'
+import selectedCategory from '../../services/selectedCategory'
+import ProductService from '../../services/productService'
 
-const products = [
-  { id: 1, title: "Running Shoes Pro", price: 2500, image: ProductImage, logotext: "ZENTRIX" },
-  { id: 2, title: "Sports Sneaker X", price: 3200, image: ProductImage, logotext: "ZENTRIX" },
-  { id: 3, title: "Casual Walkers", price: 1800, image: ProductImage, logotext: "ZENTRIX" },
-  { id: 4, title: "Gym Trainer Plus", price: 4000, image: ProductImage, logotext: "ZENTRIX" },
-  { id: 5, title: "Lightweight Runner", price: 2200, image: ProductImage, logotext: "ZENTRIX" },
-  { id: 6, title: "Urban Style Shoes", price: 2800, image: ProductImage, logotext: "ZENTRIX" },
-  { id: 7, title: "Comfort Walkers", price: 1500, image: ProductImage, logotext: "ZENTRIX" },
-  { id: 8, title: "Premium Sneakers", price: 5000, image: ProductImage, logotext: "ZENTRIX" },
-  { id: 9, title: "Daily Use Shoes", price: 2000, image: ProductImage, logotext: "ZENTRIX" },
-  { id: 10, title: "Running Elite", price: 3500, image: ProductImage, logotext: "ZENTRIX" },
-  { id: 11, title: "Classic Sneakers", price: 2700, image: ProductImage, logotext: "ZENTRIX" },
-  { id: 12, title: "Street Style Pro", price: 3100, image: ProductImage, logotext: "ZENTRIX" }
-];
+const ProductsList = () => {
+  const [products, setProducts] = useState([])
+  const [loading, setLoading] = useState(true)
+  
+  const selected = selectedCategory.getCategory()
+  const formattedCategory = selected.toLowerCase().replace(/ /g, '-')
+  console.log(formattedCategory)
 
-const ProductsList= () => {
+  // Get all products on component mount
+  useEffect(() => {
+    const service = new ProductService()
+    
+    // Wait for products to load
+    setTimeout(() => {
+      const allProducts = service.getAllProducts()
+      setProducts(allProducts)
+      console.log('Products loaded:', allProducts)
+    }, 500)
+  }, [])
+
+
   return (
-
     <>
-    <div className={Styles.homePeoductsHeading}>
-      <SectionHeading subHeading="HOT DEALS"  heading="Our Best Selling Products" buttonText="Order Now"/>
-    </div>
-
-    <Container>
-      <div className={Styles.productCollection}>
-        {products.slice(0, 8).map((item) => (
-          <Product
-            key={item.id}
-            title={item.title}
-            price={item.price}
-            image={item.image}
-            logotext={item.logotext}
-          />
-        ))}
+      <div className={Styles.homePeoductsHeading}>
+        <SectionHeading subHeading="HOT DEALS" heading="Our Best Selling Products" buttonText="Order Now"/>
       </div>
-    </Container>
-    <SectionGap />
+
+      <Container>
+        <div className={Styles.productCollection}>
+          {products.slice(0, 8).map((item) => (
+            <Product
+              key={item.id}
+              title={item.title}
+              price={item.price}
+              image={item.image || ProductImage}
+              logotext={item.logotext}
+            />
+          ))}
+        </div>
+      </Container>
+      <SectionGap />
     </>
-  );
+  )
 }
 
 export default ProductsList

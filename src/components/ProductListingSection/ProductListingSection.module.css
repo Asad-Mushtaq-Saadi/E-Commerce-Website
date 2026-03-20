@@ -1,0 +1,230 @@
+.plFilters {
+    width: 300px;
+    background: #fff;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.ProductListingContent {
+    display: flex;
+    gap: 2rem;
+    position: relative;
+}
+
+/* Filter Top Bar - Hidden by default on desktop */
+.filterTopBar {
+    display: none;
+    margin-bottom: 1.5rem;
+}
+
+.filterToggleBtn {
+    width: 100%;
+    padding: 1rem;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.filterToggleBtn:hover {
+    background: #0056b3;
+}
+
+/* Filter Header for Mobile */
+.filterHeader {
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #f0f0f0;
+}
+
+.filterHeader h2 {
+    font-size: 1.5rem;
+    margin: 0;
+    color: #333;
+}
+
+.closeBtn {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #666;
+    padding: 0.5rem;
+    line-height: 1;
+}
+
+.closeBtn:hover {
+    color: #dc3545;
+}
+
+/* Overlay */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 998;
+    display: none;
+}
+
+/* Categories Styles */
+.plCategories {
+    padding-top: 1.5rem;
+}
+
+.plCategories h1 {
+    font-size: 2.3rem;  
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.plCategories .plCategory {
+    font-size: 1.7rem;  
+    padding-left: .5rem;
+    margin: 0.3rem 0;
+    cursor: pointer;
+    border-radius: 0.3rem;
+    transition: all 0.2s;
+}
+
+.plCategories .plCategory:hover {
+    color: #007bff;
+}
+
+/* Price Filter Styles */
+.priceFilter h1 {
+    font-size: 2.3rem;  
+    padding-top: 1.5rem;
+    color: #333;
+}
+
+.priceInputs {
+    display: flex;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+}
+
+.inputGroup {
+    flex: 1;
+}
+
+.inputGroup label {
+    display: block;
+    font-size: 1.3rem;  
+    margin-top: 0.5rem;
+    margin-bottom: 0.3rem;
+    color: #666;
+}
+
+.priceInput {
+    width: 100%;
+    padding: 0.8rem 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 0.375rem;
+    font-size: 1.5rem;  
+    box-sizing: border-box;
+    margin-bottom: 0.5rem;
+}
+
+.priceInput:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+.priceInput::-webkit-outer-spin-button,
+.priceInput::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.priceInput[type=number] {
+    -moz-appearance: textfield;
+}
+
+.applyButton {
+    width: 100%;
+    padding: 0.8rem;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 0.375rem;
+    font-size: 1.5rem;  
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.applyButton:hover {
+    background: #0056b3;
+}
+
+/* Products Grid */
+.plProducts {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Mobile Responsive */
+@media screen and (max-width: 768px) {
+    .ProductListingContent {
+        flex-direction: column;
+    }
+    
+    /* Show filter button on mobile */
+    .filterTopBar {
+        display: block;
+    }
+    
+    /* Transform sidebar into popup */
+    .plFilters {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 85%;
+        max-width: 320px;
+        height: 100vh;
+        overflow-y: auto;
+        z-index: 999;
+        border-radius: 0;
+        box-shadow: 2px 0 10px rgba(0,0,0,0.2);
+        transition: left 0.3s ease;
+        padding: 1.5rem;
+    }
+    
+    .plFilters.show {
+        left: 0;
+    }
+    
+    /* Show header and overlay on mobile */
+    .filterHeader {
+        display: flex;
+    }
+    
+    .overlay {
+        display: block;
+    }
+}
+
+@media (max-width: 48rem) {
+    .priceInputs {
+        flex-direction: column;
+    }
+}

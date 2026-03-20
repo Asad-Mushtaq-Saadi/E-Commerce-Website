@@ -3,18 +3,34 @@ import Styles from './Categories.module.css'
 import { MdOutlineMenu } from "react-icons/md";
 import SideBar from '../../HeaderSection/SideBar/SideBar';
 import { CategoriesContext } from '../../../context/CategoriesContext';
+import selectedCategory from '../../../services/selectedCategory'
 
 const Categories = () => {
 
   const [isOpen, setIsOpen] = useState(false);
+  const [activeCategory, setActiveCategory] = useState('All');
 
   const { categories } = useContext(CategoriesContext);
+
+  const handleCategoryClick = (categoryName) => {
+    selectedCategory.setCategory(categoryName);
+    setActiveCategory(categoryName); 
+  };
+  // console.log(activeCategory);
+  // console.log(selectedCategory);
+  
 
   return (
     <>
       <div className={Styles.categoriesParent}>
         {categories.map((item) => (
-          <p key={item.id}>{item.categoryName}</p>
+          <p 
+            key={item.id}
+            onClick={() => handleCategoryClick(item.categoryName)}
+            
+          >
+            {item.categoryName}
+          </p>
         ))}
         <MdOutlineMenu
           className={Styles.icon}
@@ -26,6 +42,7 @@ const Categories = () => {
         categories={categories}
         isOpen={isOpen}
         setIsOpen={setIsOpen}
+        onCategoryClick={handleCategoryClick}
       />
     </>
   );
