@@ -3,7 +3,7 @@ import Container from '../Building Blocks/Container/Container'
 import Product from '../Building Blocks/ProductCard/ProductCard'
 import Styles from './ProductsList.module.css'
 import ProductImage from '../../assets/Images/Shoes Image.jpg'
-import SectionHeading from '../Building Blocks/SectionHeadings/SectionHeadingWithButton'
+import SectionHeading from '../Building Blocks/SectionHeadings/SectionHeading'
 import SectionGap from '../Building Blocks/SectionGap/SectionGap'
 import selectedCategory from '../../services/selectedCategory'
 import ProductService from '../../services/productService'
@@ -32,7 +32,7 @@ const ProductsList = () => {
   return (
     <>
       <div className={Styles.homePeoductsHeading}>
-        <SectionHeading subHeading="HOT DEALS" heading="Our Best Selling Products" buttonText="Order Now"/>
+        <SectionHeading subHeading="HOT DEALS" heading="Our Best Selling Products" />
       </div>
 
       <Container>

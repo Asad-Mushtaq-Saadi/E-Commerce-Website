@@ -4,11 +4,13 @@
     font-size: 1.7rem;
 }
 
-.categoriesParent p {
+.categoriesParent .category {
     transition: color 0.5s ease;
+    text-decoration: none;
+    color: var(--secondary-color);
 }
 
-.categoriesParent p:hover {
+.categoriesParent .category:hover {
     color: var(--primary-color);
     cursor: pointer;
 }
@@ -20,7 +22,7 @@
 
 
 @media (max-width: 860px) {
-.categoriesParent p{
+.categoriesParent .category{
     display: none;
 }
 .icon{

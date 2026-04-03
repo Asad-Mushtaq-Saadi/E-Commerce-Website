@@ -1,8 +1,9 @@
 import React, { useEffect } from 'react'
 import Styles from './SideBar.module.css'
 import { RxCross2 } from "react-icons/rx";
+import { Link } from 'react-router-dom';
 
-const SideBar = ({ categories, isOpen, setIsOpen }) => {
+const SideBar = ({ categories, isOpen, setIsOpen, onCategoryClick }) => {
 
     useEffect(() => {
         if (isOpen) {
@@ -33,13 +34,22 @@ const SideBar = ({ categories, isOpen, setIsOpen }) => {
                 />
 
                 {categories.map((item) => (
-                    <p key={item.id}>
-                        {item.categoryName}
-                    </p>
+                    <Link
+                        key={item.id}
+                        to={'/product-list'}
+                        onClick={() => {
+                            onCategoryClick(item.categoryName);
+                            setIsOpen(false);
+                             window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+                        }}
+                        style={{ textDecoration: 'none', color: 'inherit' }}
+                    >
+                        <p>{item.categoryName}</p>
+                    </Link>
                 ))}
             </div>
         </div>
     )
 }
 
-export default SideBar
+export default SideBar;

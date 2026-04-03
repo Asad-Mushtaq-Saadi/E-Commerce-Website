@@ -4,6 +4,7 @@ import { MdOutlineMenu } from "react-icons/md";
 import SideBar from '../../HeaderSection/SideBar/SideBar';
 import { CategoriesContext } from '../../../context/CategoriesContext';
 import selectedCategory from '../../../services/selectedCategory'
+import { Link } from 'react-router-dom';
 
 const Categories = () => {
 
@@ -15,21 +16,24 @@ const Categories = () => {
   const handleCategoryClick = (categoryName) => {
     selectedCategory.setCategory(categoryName);
     setActiveCategory(categoryName); 
+    setIsOpen(false); // Close sidebar after category click
   };
-
-  
 
   return (
     <>
       <div className={Styles.categoriesParent}>
         {categories.map((item) => (
-          <p 
+          <Link 
+            className={Styles.category}
+            to={'/product-list'}
             key={item.id}
-            onClick={() => handleCategoryClick(item.categoryName)}
-            
+            onClick={() => {
+    handleCategoryClick(item.categoryName);
+     window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+}}
           >
             {item.categoryName}
-          </p>
+          </Link>
         ))}
         <MdOutlineMenu
           className={Styles.icon}
@@ -41,7 +45,7 @@ const Categories = () => {
         categories={categories}
         isOpen={isOpen}
         setIsOpen={setIsOpen}
-        onCategoryClick={handleCategoryClick}
+        onCategoryClick={handleCategoryClick} // Pass the function to SideBar
       />
     </>
   );

@@ -1,11 +1,10 @@
 import React from 'react'
 import Styles from './ButtonsStyles.module.css'
 
-const SquareButton = ({children}) => {
+const SquareButton = ({ children, onClick }) => {
   return (
     <div className={Styles.roundedButtonParent}>
-        <button>{children}</button>
-      
+        <button onClick={onClick}>{children}</button>
     </div>
   )
 }
